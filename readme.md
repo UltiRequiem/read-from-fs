@@ -15,6 +15,29 @@ yarn add read-from-fs
 pnpm add read-from-fs
 ```
 
+## Usage
+
+```ts
+// schemas/index
+import { readFromSyncGenerator } from "read-from-fs";
+
+const readFromHere = readFromSyncGenerator(__dirname);
+
+export const myFirstSchema = readFromHere("schema.graphql");
+export const my2Schema = readFromHere("2.graphql");
+export const my3Schema = readFromHere("3.graphql");
+```
+
+By default it read the file as `utf-8` but you can change that by
+
+```ts
+export const my3Schema = readFromHere("3.graphql", "ascii");
+```
+
+## TODO
+
+Add TSDocs with usage examples in the code. Check [#1](https://github.com/UltiRequiem/read-from-fs/issues/1).
+
 ## Docs
 
 Check the API on 👇
