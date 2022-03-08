@@ -1,13 +1,14 @@
 {
-  "name": "read-here",
-  "version": "0.1.1",
+  "name": "read-from-fs",
+  "version": "0.1.0",
+  "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com>",
+  "license": "MIT",
+  "description": "Utilities to read files from the file system",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
