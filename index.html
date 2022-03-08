@@ -17,6 +17,20 @@ yarn add read-from-fs
 pnpm add read-from-fs
 </code></pre>
 
+<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+  <h2>Usage</h2>
+</a>
+<pre><code class="language-ts"><span class="hl-0">// schemas/index</span><br/><span class="hl-1">import</span><span class="hl-2"> { </span><span class="hl-3">readFromSyncGenerator</span><span class="hl-2"> } </span><span class="hl-1">from</span><span class="hl-2"> </span><span class="hl-4">&quot;read-from-fs&quot;</span><span class="hl-2">;</span><br/><br/><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-6">readFromHere</span><span class="hl-2"> = </span><span class="hl-7">readFromSyncGenerator</span><span class="hl-2">(</span><span class="hl-3">__dirname</span><span class="hl-2">);</span><br/><br/><span class="hl-1">export</span><span class="hl-2"> </span><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-6">myFirstSchema</span><span class="hl-2"> = </span><span class="hl-7">readFromHere</span><span class="hl-2">(</span><span class="hl-4">&quot;schema.graphql&quot;</span><span class="hl-2">);</span><br/><span class="hl-1">export</span><span class="hl-2"> </span><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-6">my2Schema</span><span class="hl-2"> = </span><span class="hl-7">readFromHere</span><span class="hl-2">(</span><span class="hl-4">&quot;2.graphql&quot;</span><span class="hl-2">);</span><br/><span class="hl-1">export</span><span class="hl-2"> </span><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-6">my3Schema</span><span class="hl-2"> = </span><span class="hl-7">readFromHere</span><span class="hl-2">(</span><span class="hl-4">&quot;3.graphql&quot;</span><span class="hl-2">);</span>
+</code></pre>
+<p>By default it read the file as <code>utf-8</code> but you can change that by</p>
+<pre><code class="language-ts"><span class="hl-1">export</span><span class="hl-2"> </span><span class="hl-5">const</span><span class="hl-2"> </span><span class="hl-6">my3Schema</span><span class="hl-2"> = </span><span class="hl-7">readFromHere</span><span class="hl-2">(</span><span class="hl-4">&quot;3.graphql&quot;</span><span class="hl-2">, </span><span class="hl-4">&quot;ascii&quot;</span><span class="hl-2">);</span>
+</code></pre>
+
+<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
+  <h2>TODO</h2>
+</a>
+<p>Add TSDocs with usage examples in the code. Check <a href="https://github.com/UltiRequiem/read-from-fs/issues/1">#1</a>.</p>
+
 <a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
   <h2>Docs</h2>
 </a>
