@@ -29,5 +29,6 @@
   },
   "keywords": [
     "files"
-  ]
+  ],
+  "packageManager": "pnpm@12.6.0"
 }
