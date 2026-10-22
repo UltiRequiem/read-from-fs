@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Install and Build 🔧
         run: |
-          npm install
-          npm run build:docs
+          pnpm install
+          pnpm run build:docs
           echo read-from-fs.js.org >> docs/CNAME
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
