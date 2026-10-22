@@ -18,7 +18,7 @@
     "lint": "eslint 'src/**/*.ts' && prettier --check 'src/**/*.ts'"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21",
+    "@types/node": "^26.6.5",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
