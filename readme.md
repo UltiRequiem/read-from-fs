@@ -34,10 +34,6 @@ By default it read the file as `utf-8` but you can change that by
 export const my3Schema = readFromHere("3.graphql", "ascii");
 ```
 
-## TODO
-
-Add TSDocs with usage examples in the code. Check [#1](https://github.com/UltiRequiem/read-from-fs/issues/1).
-
 ## Docs
 
 Check the API on 👇
