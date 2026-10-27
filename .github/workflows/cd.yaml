@@ -10,9 +10,15 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v7
 
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: pnpm
+
       - name: Install and Build 🔧
         run: |
-          pnpm install
+          pnpm install --frozen-lockfile
           pnpm run build:docs
           echo read-from-fs.js.org >> docs/CNAME
       - name: Deploy 🚀
